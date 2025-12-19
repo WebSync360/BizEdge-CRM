@@ -1,11 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <!-- Basic Meta -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO / App Description -->
+  <meta
+    name="description"
+    content="Mindset Coach Mini CRM – a calm, professional dashboard for coaches to manage clients, leads, sessions, and progress in one place."
+  />
+  <meta name="author" content="WebSync360" />
+
+  <!-- Page Title -->
+  <title>MindsetCRM — Coach Dashboard</title>
+
+  <!-- Favicon -->
+  <!-- Replace later with real logo -->
+  <link
+    rel="icon"
+    href="https://via.placeholder.com/32x32.png?text=M"
+    type="image/png"
+  />
+
+  <!-- Google Font: Inter -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Tailwind CSS (compiled) -->
+  <link href="dist/output.css" rel="stylesheet" />
+
+  <!-- Optional: Animate.css (use sparingly) -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
+  <!-- Open Graph (Social Preview) -->
+  <meta property="og:title" content="MindsetCRM — Coach Dashboard" />
+  <meta
+    property="og:description"
+    content="A lightweight, professional CRM built for mindset coaches to manage clients, sessions, and growth."
+  />
+  <meta
+    property="og:image"
+    content="https://via.placeholder.com/1200x630.png?text=MindsetCRM+Preview"
+  />
+  <meta property="og:type" content="website" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="MindsetCRM — Coach Dashboard" />
+  <meta
+    name="twitter:description"
+    content="A calm, modern CRM dashboard designed specifically for mindset coaches."
+  />
+  <meta
+    name="twitter:image"
+    content="https://via.placeholder.com/1200x630.png?text=MindsetCRM+Preview"
+  />
+
+  <!-- Normalize CSS (Optional, safe to keep) -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+  />
 </head>
-<body>
-  
+<body class="bg-app text-text-secondary font-inter">
+
+  <!-- HEADER -->
+  <header class="fixed top-0 left-0 w-full bg-surface border-b border-gray-200 z-50">
+    <div class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
+
+      <!-- Logo -->
+      <div class="font-semibold text-lg text-text-primary">
+        Mindset<span class="text-brand-600">CRM</span>
+      </div>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden md:flex gap-6">
+        <button class="nav-btn active" data-target="dashboard">Dashboard</button>
+        <button class="nav-btn" data-target="clients">Clients</button>
+        <button class="nav-btn" data-target="leads">Leads</button>
+        <button class="nav-btn" data-target="settings">Settings</button>
+      </nav>
+
+      <!-- Mobile Hamburger -->
+      <button id="menuBtn" class="md:hidden text-text-primary text-xl">
+        ☰
+      </button>
+
+    </div>
+  </header>
+
+  <!-- MOBILE SIDEBAR -->
+  <div id="mobileMenu" class="fixed inset-0 bg-black/40 hidden z-40">
+    <div class="bg-surface w-64 h-full p-4 shadow-card">
+      <div class="mb-6 font-semibold text-lg text-text-primary">
+        Mindset<span class="text-brand-600">CRM</span>
+      </div>
+
+      <nav class="flex flex-col gap-4">
+        <button class="nav-btn" data-target="dashboard">Dashboard</button>
+        <button class="nav-btn" data-target="clients">Clients</button>
+        <button class="nav-btn" data-target="leads">Leads</button>
+        <button class="nav-btn" data-target="settings">Settings</button>
+      </nav>
+    </div>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <main class="pt-20 max-w-7xl mx-auto px-4">
+
+    <section id="dashboard">
+      <h1 class="text-2xl font-semibold text-text-primary">Dashboard</h1>
+    </section>
+
+    <section id="clients" class="hidden">
+      <h1 class="text-2xl font-semibold text-text-primary">Clients</h1>
+    </section>
+
+    <section id="leads" class="hidden">
+      <h1 class="text-2xl font-semibold text-text-primary">Leads</h1>
+    </section>
+
+    <section id="settings" class="hidden">
+      <h1 class="text-2xl font-semibold text-text-primary">Settings</h1>
+    </section>
+
+  </main>
+
+  <script src="src/script.js"></script>
 </body>
 </html>
