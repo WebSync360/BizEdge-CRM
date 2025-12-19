@@ -2,6 +2,9 @@ const navButtons = document.querySelectorAll('.nav-btn');
 const sections = document.querySelectorAll('main section');
 const menuBtn = document.getElementById('menuBtn');
 const mobileMenu = document.getElementById('mobileMenu');
+  // Theme toggle logic
+  const themeToggle = document.getElementById('themeToggle');
+  const toggleBall = themeToggle.querySelector('span');
 
 // Handle SPA navigation & active state
 navButtons.forEach(btn => {
@@ -38,4 +41,7 @@ mobileMenu.addEventListener('click', (e) => {
   }
 });
 
-
+  themeToggle.addEventListener('click', () => {
+    document.documentElement.classList.toggle('dark');
+    toggleBall.classList.toggle('translate-x-7');
+  });
