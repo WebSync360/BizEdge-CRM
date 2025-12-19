@@ -37,3 +37,5 @@ mobileMenu.addEventListener('click', (e) => {
     mobileMenu.classList.add('hidden');
   }
 });
+
+
