@@ -169,10 +169,65 @@
   <!-- MAIN APP -->
   <main class="pt-24 max-w-7xl mx-auto px-4">
 
-    <section id="dashboard">
-      <h1 class="text-2xl font-semibold text-slate-900 mb-2">Dashboard</h1>
-      <p class="text-sm text-slate-500">Overview of your CRM activity.</p>
+    <section id="dashboard" class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
+
+      <!-- KPI Card 1 -->
+      <div class="bg-white shadow rounded-lg p-5 flex flex-col justify-between">
+        <div class="flex items-center justify-between">
+          <span class="text-sm font-medium text-slate-500">Total Clients</span>
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-indigo-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+          </svg>
+        </div>
+        <h2 class="mt-4 text-2xl font-semibold text-slate-900">1,245</h2>
+      </div>
+
+      <!-- KPI Card 2 -->
+      <div class="bg-white shadow rounded-lg p-5 flex flex-col justify-between">
+        <div class="flex items-center justify-between">
+          <span class="text-sm font-medium text-slate-500">New Leads</span>
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+          </svg>
+        </div>
+        <h2 class="mt-4 text-2xl font-semibold text-slate-900">328</h2>
+      </div>
+
+      <!-- KPI Card 3 -->
+      <div class="bg-white shadow rounded-lg p-5 flex flex-col justify-between">
+        <div class="flex items-center justify-between">
+          <span class="text-sm font-medium text-slate-500">Deals Closed</span>
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-yellow-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+          </svg>
+        </div>
+        <h2 class="mt-4 text-2xl font-semibold text-slate-900">89</h2>
+      </div>
+
+      <!-- KPI Card 4 -->
+      <div class="bg-white shadow rounded-lg p-5 flex flex-col justify-between">
+        <div class="flex items-center justify-between">
+          <span class="text-sm font-medium text-slate-500">Tasks Pending</span>
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+          </svg>
+        </div>
+        <h2 class="mt-4 text-2xl font-semibold text-slate-900">17</h2>
+      </div>
+
+      <!-- Activity Feed -->
+      <div class="col-span-1 md:col-span-2 lg:col-span-4 bg-white shadow rounded-lg p-5 mt-6">
+        <h3 class="text-lg font-semibold text-slate-900 mb-4">Recent Activity</h3>
+        <ul class="space-y-3 text-sm text-slate-600">
+          <li>John Doe added a new client.</li>
+          <li>Lead “Acme Corp” updated to contacted.</li>
+          <li>Deal “Project X” marked as closed.</li>
+          <li>Task “Follow up with Sarah” pending.</li>
+        </ul>
+      </div>
+
     </section>
+
 
     <section id="clients" class="hidden">
       <h1 class="text-2xl font-semibold text-slate-900">Clients</h1>
