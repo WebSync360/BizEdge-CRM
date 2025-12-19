@@ -377,9 +377,100 @@
       </section>
 
 
-    <section id="leads" class="hidden">
-      <h1 class="text-2xl font-semibold text-slate-900">Leads</h1>
-    </section>
+      <section id="leads" class="hidden">
+
+        <!-- Section Header -->
+        <div class="flex flex-col md:flex-row items-start md:items-center justify-between mb-6 gap-4">
+          <div>
+            <h1 class="text-2xl font-semibold text-slate-900">Leads</h1>
+            <p class="text-sm text-slate-500">Track and manage your potential clients.</p>
+          </div>
+          <!-- Quick Actions -->
+          <div class="flex flex-wrap gap-3">
+            <button class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg shadow transition flex items-center gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+              </svg>
+              Add Lead
+            </button>
+            <button class="bg-gray-100 hover:bg-gray-200 text-slate-800 px-4 py-2 rounded-lg shadow transition flex items-center gap-2">
+              Filter
+            </button>
+          </div>
+        </div>
+
+        <!-- Search + Filters -->
+        <div class="flex flex-col md:flex-row items-center justify-between gap-4 mb-4">
+          <input type="text" placeholder="Search leads..." class="flex-1 border border-slate-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-green-500 focus:border-green-500 transition" />
+          <select class="border border-slate-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-green-500 focus:border-green-500 transition">
+            <option value="">All Status</option>
+            <option value="new">New</option>
+            <option value="contacted">Contacted</option>
+            <option value="qualified">Qualified</option>
+            <option value="lost">Lost</option>
+          </select>
+        </div>
+
+        <!-- Leads Table -->
+        <div class="overflow-x-auto">
+          <table class="min-w-full bg-white rounded-xl shadow-lg overflow-hidden">
+            <thead class="bg-green-50">
+              <tr>
+                <th class="text-left text-slate-500 px-6 py-3 text-sm font-medium">Lead Name</th>
+                <th class="text-left text-slate-500 px-6 py-3 text-sm font-medium">Company</th>
+                <th class="text-left text-slate-500 px-6 py-3 text-sm font-medium">Status</th>
+                <th class="text-left text-slate-500 px-6 py-3 text-sm font-medium">Last Contact</th>
+                <th class="text-left text-slate-500 px-6 py-3 text-sm font-medium">Actions</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-slate-100">
+              <tr class="hover:bg-green-50 transition">
+                <td class="px-6 py-4 text-slate-900 font-medium">John Doe</td>
+                <td class="px-6 py-4 text-slate-500">Acme Corp</td>
+                <td class="px-6 py-4">
+                  <span class="px-2 py-1 rounded-full text-xs font-medium bg-green-100 text-green-700">New</span>
+                </td>
+                <td class="px-6 py-4 text-slate-500 text-sm">2h ago</td>
+                <td class="px-6 py-4 flex gap-2">
+                  <button class="hover:text-green-600 transition" title="View">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12H9m12 0c0 4.418-4.03 8-9 8s-9-3.582-9-8 4.03-8 9-8 9 3.582 9 8z" />
+                    </svg>
+                  </button>
+                  <button class="hover:text-green-600 transition" title="Edit">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536M9 11l6-6 3 3-6 6H9v-3z" />
+                    </svg>
+                  </button>
+                </td>
+              </tr>
+              <tr class="hover:bg-green-50 transition">
+                <td class="px-6 py-4 text-slate-900 font-medium">Mary Smith</td>
+                <td class="px-6 py-4 text-slate-500">Beta LLC</td>
+                <td class="px-6 py-4">
+                  <span class="px-2 py-1 rounded-full text-xs font-medium bg-yellow-100 text-yellow-700">Contacted</span>
+                </td>
+                <td class="px-6 py-4 text-slate-500 text-sm">1d ago</td>
+                <td class="px-6 py-4 flex gap-2">
+                  <button class="hover:text-green-600 transition" title="View">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12H9m12 0c0 4.418-4.03 8-9 8s-9-3.582-9-8 4.03-8 9-8 9 3.582 9 8z" />
+                    </svg>
+                  </button>
+                  <button class="hover:text-green-600 transition" title="Edit">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536M9 11l6-6 3 3-6 6H9v-3z" />
+                    </svg>
+                  </button>
+                </td>
+              </tr>
+              <!-- Add more leads here -->
+            </tbody>
+          </table>
+        </div>
+
+      </section>
+
 
     <section id="settings" class="hidden">
       <h1 class="text-2xl font-semibold text-slate-900">Settings</h1>
