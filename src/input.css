@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .nav-btn {
+    @apply px-3 py-2 rounded-lg text-sm font-medium text-slate-600
+           transition hover:bg-slate-100 hover:text-slate-900;
+  }
+
+  .nav-btn.active {
+    @apply bg-indigo-50 text-indigo-600 font-semibold;
+  }
+}
