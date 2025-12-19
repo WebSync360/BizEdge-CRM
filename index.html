@@ -126,11 +126,43 @@
       </div>
 
       <nav class="flex flex-col gap-4 text-sm font-medium">
-        <button class="nav-btn" data-target="dashboard">Dashboard</button>
-        <button class="nav-btn" data-target="clients">Clients</button>
-        <button class="nav-btn" data-target="leads">Leads</button>
-        <button class="nav-btn" data-target="settings">Settings</button>
+        <button class="nav-btn flex items-center gap-3" data-target="dashboard">
+          <!-- Dashboard Icon -->
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M3 12l2-2m0 0l7-7 7 7M13 5v6h6m-6 0H7v6h6m6-6v6h-6" />
+          </svg>
+          Dashboard
+        </button>
+
+        <button class="nav-btn flex items-center gap-3" data-target="clients">
+          <!-- Clients Icon -->
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M5.121 17.804A6 6 0 0112 15a6 6 0 016.879 2.804M12 12a4 4 0 100-8 4 4 0 000 8z" />
+          </svg>
+          Clients
+        </button>
+
+        <button class="nav-btn flex items-center gap-3" data-target="leads">
+          <!-- Leads Icon -->
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M9 17v-2a4 4 0 014-4h3m-7 6h6m2 0a2 2 0 100-4 2 2 0 000 4z" />
+          </svg>
+          Leads
+        </button>
+
+        <button class="nav-btn flex items-center gap-3" data-target="settings">
+          <!-- Settings Icon -->
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M12 8c-1.333 0-2 .667-2 2s.667 2 2 2 2-.667 2-2-.667-2-2-2zM4.75 12a7.25 7.25 0 0014.5 0M12 4v1m0 14v1m8-8h-1M4 12H3m15.364-5.364l-.707.707M6.343 17.657l-.707.707m12.728 0l-.707-.707M6.343 6.343l-.707-.707" />
+          </svg>
+          Settings
+        </button>
       </nav>
+
     </aside>
   </div>
 
