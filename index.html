@@ -169,69 +169,213 @@
   <!-- MAIN APP -->
   <main class="pt-24 max-w-7xl mx-auto px-4">
 
-    <section id="dashboard" class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
+      <section id="dashboard" class="relative grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
 
-      <!-- KPI Card 1 -->
-      <div class="bg-white shadow rounded-lg p-5 flex flex-col justify-between">
-        <div class="flex items-center justify-between">
-          <span class="text-sm font-medium text-slate-500">Total Clients</span>
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-indigo-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-          </svg>
+        <!-- Top gradient accent behind cards (subtle) -->
+        <div class="absolute inset-0 bg-gradient-to-br from-indigo-50 via-white to-white -z-10 rounded-lg"></div>
+
+        <!-- KPI Card 1: Total Clients -->
+        <div class="bg-white shadow-lg rounded-xl p-6 flex flex-col justify-between hover:shadow-xl transition">
+          <div class="flex items-center justify-between">
+            <span class="text-sm font-medium text-slate-500">Total Clients</span>
+            <div class="w-10 h-10 rounded-lg bg-indigo-100 flex items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 17.804A6 6 0 0112 15a6 6 0 016.879 2.804M12 12a4 4 0 100-8 4 4 0 000 8z" />
+              </svg>
+            </div>
+          </div>
+          <h2 class="mt-4 text-3xl font-bold text-slate-900">1,245</h2>
+          <p class="mt-1 text-xs text-slate-400">Updated 2 hours ago</p>
         </div>
-        <h2 class="mt-4 text-2xl font-semibold text-slate-900">1,245</h2>
-      </div>
 
-      <!-- KPI Card 2 -->
-      <div class="bg-white shadow rounded-lg p-5 flex flex-col justify-between">
-        <div class="flex items-center justify-between">
-          <span class="text-sm font-medium text-slate-500">New Leads</span>
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-          </svg>
+        <!-- KPI Card 2: New Leads -->
+        <div class="bg-white shadow-lg rounded-xl p-6 flex flex-col justify-between hover:shadow-xl transition">
+          <div class="flex items-center justify-between">
+            <span class="text-sm font-medium text-slate-500">New Leads</span>
+            <div class="w-10 h-10 rounded-lg bg-green-100 flex items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-2a4 4 0 014-4h3m-7 6h6m2 0a2 2 0 100-4 2 2 0 000 4z" />
+              </svg>
+            </div>
+          </div>
+          <h2 class="mt-4 text-3xl font-bold text-slate-900">328</h2>
+          <p class="mt-1 text-xs text-slate-400">Updated 30 mins ago</p>
         </div>
-        <h2 class="mt-4 text-2xl font-semibold text-slate-900">328</h2>
-      </div>
 
-      <!-- KPI Card 3 -->
-      <div class="bg-white shadow rounded-lg p-5 flex flex-col justify-between">
-        <div class="flex items-center justify-between">
-          <span class="text-sm font-medium text-slate-500">Deals Closed</span>
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-yellow-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-          </svg>
+        <!-- KPI Card 3: Deals Closed -->
+        <div class="bg-white shadow-lg rounded-xl p-6 flex flex-col justify-between hover:shadow-xl transition">
+          <div class="flex items-center justify-between">
+            <span class="text-sm font-medium text-slate-500">Deals Closed</span>
+            <div class="w-10 h-10 rounded-lg bg-yellow-100 flex items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-yellow-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+            </div>
+          </div>
+          <h2 class="mt-4 text-3xl font-bold text-slate-900">89</h2>
+          <p class="mt-1 text-xs text-slate-400">Updated 1 hour ago</p>
         </div>
-        <h2 class="mt-4 text-2xl font-semibold text-slate-900">89</h2>
-      </div>
 
-      <!-- KPI Card 4 -->
-      <div class="bg-white shadow rounded-lg p-5 flex flex-col justify-between">
-        <div class="flex items-center justify-between">
-          <span class="text-sm font-medium text-slate-500">Tasks Pending</span>
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-          </svg>
+        <!-- KPI Card 4: Tasks Pending -->
+        <div class="bg-white shadow-lg rounded-xl p-6 flex flex-col justify-between hover:shadow-xl transition">
+          <div class="flex items-center justify-between">
+            <span class="text-sm font-medium text-slate-500">Tasks Pending</span>
+            <div class="w-10 h-10 rounded-lg bg-red-100 flex items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-red-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.333 0-2 .667-2 2s.667 2 2 2 2-.667 2-2-.667-2-2-2zM4.75 12a7.25 7.25 0 0014.5 0" />
+              </svg>
+            </div>
+          </div>
+          <h2 class="mt-4 text-3xl font-bold text-slate-900">17</h2>
+          <p class="mt-1 text-xs text-slate-400">Updated 15 mins ago</p>
         </div>
-        <h2 class="mt-4 text-2xl font-semibold text-slate-900">17</h2>
-      </div>
 
-      <!-- Activity Feed -->
-      <div class="col-span-1 md:col-span-2 lg:col-span-4 bg-white shadow rounded-lg p-5 mt-6">
-        <h3 class="text-lg font-semibold text-slate-900 mb-4">Recent Activity</h3>
-        <ul class="space-y-3 text-sm text-slate-600">
-          <li>Raymond Red added a new client.</li>
-          <li>Lead “Acme Corp” updated to contacted.</li>
-          <li>Deal “Project X” marked as closed.</li>
-          <li>Task “Follow up with Sarah” pending.</li>
-        </ul>
-      </div>
+        <!-- Activity Feed -->
+        <div class="col-span-1 md:col-span-2 lg:col-span-4 bg-white shadow-lg rounded-xl p-6 mt-6">
+          <div class="flex items-center justify-between mb-4">
+            <h3 class="text-lg font-semibold text-slate-900">Recent Activity</h3>
+            <button class="text-indigo-600 text-sm font-medium hover:underline">View All</button>
+          </div>
+          <ul class="space-y-3 text-sm text-slate-600">
+            <li class="flex justify-between items-center hover:bg-slate-50 p-2 rounded transition">
+              <span>Raymond added a new client.</span>
+              <span class="text-xs text-slate-400">2h ago</span>
+            </li>
+            <li class="flex justify-between items-center hover:bg-slate-50 p-2 rounded transition">
+              <span>Lead “Acme Corp” updated to contacted.</span>
+              <span class="text-xs text-slate-400">1h ago</span>
+            </li>
+            <li class="flex justify-between items-center hover:bg-slate-50 p-2 rounded transition">
+              <span>Deal “Project X” marked as closed.</span>
+              <span class="text-xs text-slate-400">45m ago</span>
+            </li>
+            <li class="flex justify-between items-center hover:bg-slate-50 p-2 rounded transition">
+              <span>Task “Follow up with Sarah” pending.</span>
+              <span class="text-xs text-slate-400">30m ago</span>
+            </li>
+          </ul>
+        </div>
 
-    </section>
+        <!-- Quick Action Buttons -->
+        <div class="col-span-1 md:col-span-2 lg:col-span-4 flex flex-wrap gap-4 mt-6">
+          <button class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-lg shadow transition flex items-center gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+            </svg>
+            Add Client
+          </button>
+          <button class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg shadow transition flex items-center gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+            </svg>
+            Add Lead
+          </button>
+          <button class="bg-yellow-500 hover:bg-yellow-600 text-white px-4 py-2 rounded-lg shadow transition flex items-center gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+            </svg>
+            Add Deal
+          </button>
+        </div>
+
+      </section>
 
 
-    <section id="clients" class="hidden">
+<section id="clients" class="hidden">
+
+  <!-- Section Header -->
+  <div class="flex flex-col md:flex-row items-start md:items-center justify-between mb-6 gap-4">
+    <div>
       <h1 class="text-2xl font-semibold text-slate-900">Clients</h1>
-    </section>
+      <p class="text-sm text-slate-500">Manage all your clients in one place.</p>
+    </div>
+    <!-- Quick Actions -->
+    <div class="flex flex-wrap gap-3">
+      <button class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-lg shadow transition flex items-center gap-2">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+        </svg>
+        Add Client
+      </button>
+      <button class="bg-gray-100 hover:bg-gray-200 text-slate-800 px-4 py-2 rounded-lg shadow transition flex items-center gap-2">
+        Filter
+      </button>
+    </div>
+  </div>
+
+  <!-- Search + Filters -->
+  <div class="flex flex-col md:flex-row items-center justify-between gap-4 mb-4">
+    <input type="text" placeholder="Search clients..." class="flex-1 border border-slate-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition" />
+    <select class="border border-slate-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition">
+      <option value="">All Status</option>
+      <option value="active">Active</option>
+      <option value="pending">Pending</option>
+      <option value="inactive">Inactive</option>
+    </select>
+  </div>
+
+  <!-- Clients Grid -->
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+    <!-- Client Card -->
+    <div class="bg-white shadow-lg rounded-xl p-5 hover:shadow-xl transition flex flex-col justify-between">
+      <div class="flex items-center gap-4 mb-4">
+        <div class="w-12 h-12 rounded-full bg-indigo-100 flex items-center justify-center text-indigo-600 font-bold text-lg">JD</div>
+        <div class="flex-1">
+          <h2 class="text-lg font-semibold text-slate-900">John Doe</h2>
+          <p class="text-sm text-slate-500">Acme Corporation</p>
+        </div>
+        <span class="text-xs px-2 py-1 rounded-full bg-green-100 text-green-700 font-medium">Active</span>
+      </div>
+      <div class="flex items-center justify-between text-sm text-slate-500">
+        <span>Last Contact: 2h ago</span>
+        <div class="flex gap-2">
+          <button class="hover:text-indigo-600 transition" title="Message">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M21 12c0 4.418-4.03 8-9 8-2.21 0-4.21-.78-5.832-2.05L3 20l1.05-3.168A8.964 8.964 0 013 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+            </svg>
+          </button>
+          <button class="hover:text-indigo-600 transition" title="Edit">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536M9 11l6-6 3 3-6 6H9v-3z" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Client Card 2 -->
+    <div class="bg-white shadow-lg rounded-xl p-5 hover:shadow-xl transition flex flex-col justify-between">
+      <div class="flex items-center gap-4 mb-4">
+        <div class="w-12 h-12 rounded-full bg-pink-100 flex items-center justify-center text-pink-600 font-bold text-lg">MS</div>
+        <div class="flex-1">
+          <h2 class="text-lg font-semibold text-slate-900">Mary Smith</h2>
+          <p class="text-sm text-slate-500">Beta LLC</p>
+        </div>
+        <span class="text-xs px-2 py-1 rounded-full bg-yellow-100 text-yellow-700 font-medium">Pending</span>
+      </div>
+      <div class="flex items-center justify-between text-sm text-slate-500">
+        <span>Last Contact: 1d ago</span>
+        <div class="flex gap-2">
+          <button class="hover:text-indigo-600 transition" title="Message">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M21 12c0 4.418-4.03 8-9 8-2.21 0-4.21-.78-5.832-2.05L3 20l1.05-3.168A8.964 8.964 0 013 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+            </svg>
+          </button>
+          <button class="hover:text-indigo-600 transition" title="Edit">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536M9 11l6-6 3 3-6 6H9v-3z" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Add as many client cards as needed -->
+  </div>
+
+</section>
+
 
     <section id="leads" class="hidden">
       <h1 class="text-2xl font-semibold text-slate-900">Leads</h1>
